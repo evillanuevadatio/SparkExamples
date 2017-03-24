@@ -60,12 +60,43 @@ cd MaxPrice
     <arg>-make:transitive</arg>
 ```
 
-###### Iniciar generación del jar
+## Iniciar generación del jar
 
 
 ```
 # mvn package
 ```
+
+## Submit de la app 
+
+```
+# spark-submit --class com.mx.datio.MaxPrice --master spark://GeoFront:7077 target/MaxPrice-1.0-SNAPSHOT.jar src/main/resources/table.csv ~/tmp/Spark/output
+```
+
+## Definimos varios parametros al spark-submit:
+###### Clase que tiene la funcionalidad o punto de acceso dentro de nuestro jar
+```
+--class com.mx.datio.MaxPrice  
+```
+###### Url del nodo Maestro de Spark el cual adminstra los recursos/task/jobs, en este caso mi maestro esta arriba con esos datos.
+```
+--master spark://GeoFront:7077 
+```
+###### Jar de nuestra apliación
+```
+target/MaxPrice-1.0-SNAPSHOT.jar 
+```
+###### Primer parametro de nuestra aplicación que es la fuente de nuestros datos, ruta absoluta del archivo de texto/csv
+```
+src/main/resources/table.csv
+```
+###### Segundo parametro de nuestra aplicación que es el destino  de nuestros datos procesados, ruta absoluta del directorio
+```
+~/tmp/Spark/output
+```
+
+
+
 
 
 
