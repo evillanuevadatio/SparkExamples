@@ -1,0 +1,25 @@
+# Container that runs Spark Master and Worker services
+spark-master:
+ image: spark-master
+ hostname: spark-master-host
+ ports:
+    # Spark master WebUI port
+    - "8080:8080"
+    # Spark master job submission port
+    - "7077:7077"
+ # Adjust according to the resources available on host machine
+ cpu_shares: 3000
+ mem_limit: 2g
+
+
+# Container that runs Spark Worker service
+#spark-slave:
+# image: spark-slave
+# hostname: spark-slave-host
+#   - spark-master
+# environment:
+   # MASTER_HOSTNAME is the hostname of the container running Spark master service
+#   - MASTER_HOSTNAME=spark-master-host
+ # Adjust according to the resources available on host machine
+# cpu_shares: 3000
+# mem_limit: 2g
