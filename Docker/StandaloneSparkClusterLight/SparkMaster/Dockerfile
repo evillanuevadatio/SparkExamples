@@ -1,4 +1,4 @@
-FROM spark-base-light
+FROM evillanuevadb/sparkbasenode
 MAINTAINER Eder Villanueva (chartrix@gmail.com)
 
 COPY tmp /usr/bin/.
