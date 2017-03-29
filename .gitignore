@@ -1,0 +1,9 @@
+# VIM
+*.swp
+*.lock*
+*.DS_Store
+
+#MAVEN
+target/
+*.class
+

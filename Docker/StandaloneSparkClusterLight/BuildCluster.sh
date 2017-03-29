@@ -10,6 +10,7 @@
 
  sudo docker build -t spark-base-light ./SparkNode/
  sudo docker build -t spark-master ./SparkMaster/
+ sudo docker build -t spark-slave ./SparkSlave/
  
  sudo docker-compose up -d
  sudo docker ps 

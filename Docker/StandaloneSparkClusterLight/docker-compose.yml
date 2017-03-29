@@ -13,13 +13,13 @@ spark-master:
 
 
 # Container that runs Spark Worker service
-#spark-slave:
-# image: spark-slave
-# hostname: spark-slave-host
-#   - spark-master
-# environment:
+spark-slave:
+ image: spark-slave
+ hostname: spark-slave-host
+   - spark-master
+ environment:
    # MASTER_HOSTNAME is the hostname of the container running Spark master service
-#   - MASTER_HOSTNAME=spark-master-host
+   - MASTER_HOSTNAME=spark-master-host
  # Adjust according to the resources available on host machine
-# cpu_shares: 3000
-# mem_limit: 2g
+ cpu_shares: 3000
+ mem_limit: 2g

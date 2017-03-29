@@ -1,4 +1,4 @@
-
+#!/bin/sh
 
 # Start spark worker service
 start-slave.sh spark://$MASTER_HOSTNAME:7077
