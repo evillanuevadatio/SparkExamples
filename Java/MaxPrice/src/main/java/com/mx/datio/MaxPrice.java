@@ -20,7 +20,7 @@ public class MaxPrice {
 
         JavaSparkContext sc = new JavaSparkContext(new SparkConf().setAppName("MaxPriceJava"));
         //JavaRDD<String> InputFile = sc.textFile("hdfs://172.17.0.2:9000/sparkData/table.csv");
-        JavaRDD<String> InputFile = sc.textFile("/home/chartrix/Development/GitHubRepos/SparkExamples/Scala/MaxPrice/src/main/resources/table.csv");
+        JavaRDD<String> InputFile = sc.textFile("/home/evillanueva/Development/GitHub/SparkExamples/Java/MaxPrice/src/main/resources/table.csv");
 
         JavaRDD<List <String> > splitedRows = InputFile.map(
                 new Function<String, List<String>>() {
@@ -29,7 +29,7 @@ public class MaxPrice {
                     }
                 }
         );
-        splitedRows.saveAsTextFile("/home/chartrix/tmp/output");
+        splitedRows.saveAsTextFile("/home/evillanueva/tmp/output");
 
           /*
         JavaRDD<String> splitedFile = InputFile.flatMap(
