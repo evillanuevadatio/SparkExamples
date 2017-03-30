@@ -8,7 +8,7 @@ import org.apache.spark.{SparkConf,SparkContext}
  */
 object MaxPrice {
   def main(args : Array[String]) {
-    val conf = new SparkConf().setAppName("MaxPrice")
+    val conf = new SparkConf().setAppName("MaxPrice").setMaster("spark://Geofront:7077")
     val sc = new SparkContext( conf )
 
     sc.textFile( args(0) )

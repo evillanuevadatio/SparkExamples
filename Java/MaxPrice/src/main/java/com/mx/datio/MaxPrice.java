@@ -18,19 +18,26 @@ import java.util.List;
 public class MaxPrice {
     public static void main( String[] args ) {
 
-        JavaSparkContext sc = new JavaSparkContext(new SparkConf().setAppName("MaxPriceJava"));
-        //JavaRDD<String> InputFile = sc.textFile("hdfs://172.17.0.2:9000/sparkData/table.csv");
-        JavaRDD<String> InputFile = sc.textFile("/home/evillanueva/Development/GitHub/SparkExamples/Java/MaxPrice/src/main/resources/table.csv");
+        if( args.length < 2 ){
+            System.out.println("Usage: MaxPrice-1.0-SNAPSHOT.jar [input] [output]");
+            System.exit(1);
+        }else{
+            String input = args[0];
+            String output = args[1];
 
-        JavaRDD<List <String> > splitedRows = InputFile.map(
-                new Function<String, List<String>>() {
-                    public List<String> call(String s) throws Exception {
-                        return Arrays.asList(s.split(","));
+            JavaSparkContext sc = new JavaSparkContext(new SparkConf().setAppName("MaxPriceJava"));
+            JavaRDD<String> InputFile = sc.textFile( input );
+
+            JavaRDD<List <String> > splitedRows = InputFile.map(
+                    new Function<String, List<String>>() {
+                        public List<String> call(String s) throws Exception {
+                            return Arrays.asList(s.split(","));
+                        }
                     }
-                }
-        );
-        splitedRows.saveAsTextFile("/home/evillanueva/tmp/output");
+            );
+            splitedRows.saveAsTextFile( output );
 
+        }
           /*
         JavaRDD<String> splitedFile = InputFile.flatMap(
                 new Function<String,String>(){
