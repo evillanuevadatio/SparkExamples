@@ -9,6 +9,9 @@
     Docker version 17.03.0-ce, build 3a232c8
 ``` 
 ##### Docker Compose
+###### La instalación del docker compose puede variar con respecto al SO
+###### https://docs.docker.com/compose/install/ 
+
 ``` 
 > sudo docker-compose version
     docker-compose version 1.11.2, build dfed245
