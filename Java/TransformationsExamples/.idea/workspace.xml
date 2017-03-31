@@ -74,8 +74,8 @@
       <file leaf-file-name="PseudoOperations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/PseudoOperations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="99" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="19" selection-end-column="99" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,28 +83,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReduceExample.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReduceExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/ReduceExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="480">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#803#1024#0" expanded="true" />
+                <element signature="e#1023#1024#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapPartitionsExample.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MapPartitionsExample.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/MapPartitionsExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#823#1066#0" expanded="true" />
-                <element signature="e#1065#1066#0" expanded="true" />
+                <element signature="e#1042#1708#0" expanded="true" />
+                <element signature="e#1707#1708#0" expanded="true" />
+                <element signature="e#1861#2104#0" expanded="true" />
+                <element signature="e#2103#2104#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,6 +136,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mappart</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -146,10 +154,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/FilterMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/FilterInput.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/FlatMapExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/MapPartitionsExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/FlatMapVsMapExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/PseudoOperations.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/ReduceExample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/EmployeeMaxBonusMapPartition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mx/datio/MapPartitionsExample.java" />
       </list>
     </option>
   </component>
@@ -735,12 +744,12 @@
       <option name="presentableId" value="Default" />
       <updated>1490821325719</updated>
       <workItem from="1490821328175" duration="1807000" />
-      <workItem from="1490824288593" duration="14335000" />
+      <workItem from="1490824288593" duration="24893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16142000" />
+    <option name="totallyTimeSpent" value="26700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -834,6 +843,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/FlatMapExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#952#1196#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -854,30 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/FlatMapExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="17" column="44" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#952#1196#0" expanded="true" />
-            <element signature="e#1195#1196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/MapPartitionsExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#823#1066#0" expanded="true" />
-            <element signature="e#1065#1066#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/FlatMapVsMapExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -894,21 +891,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/PseudoOperations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="99" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="19" selection-end-column="99" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/EmployeeMaxBonusMapPartition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="203" column="59" lean-forward="true" selection-start-line="203" selection-start-column="59" selection-end-line="203" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/ReduceExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="480">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#803#1024#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/datio/MapPartitionsExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1042#1708#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1861#2104#0" expanded="true" />
+            <element signature="e#2103#2104#0" expanded="true" />
           </folding>
         </state>
       </provider>
