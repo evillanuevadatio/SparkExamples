@@ -16,6 +16,7 @@ spark-master:
 spark-slave:
  image: spark-slave
  hostname: spark-slave-host
+ links:
    - spark-master
  environment:
    # MASTER_HOSTNAME is the hostname of the container running Spark master service

@@ -51,6 +51,14 @@
 > sudo docker-compose rm -f
 ``` 
 
+#### Escalar  containers ( slaves
+
+``` 
+> sudo docker-compose scale spark-slave=2
+``` 
+
+
+
 
 
 
