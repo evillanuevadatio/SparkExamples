@@ -1,0 +1,13 @@
+# Container that runs Spark Master and Worker services
+spark-master:
+ image: zookeeper
+ hostname: spark-master-host
+ ports:
+    # Spark master job submission port
+    - "12181:2181"
+    - "12888:2888"
+    - "13888:3888"
+ # Adjust according to the resources available on host machine
+ cpu_shares: 3000
+ mem_limit: 2g
+
