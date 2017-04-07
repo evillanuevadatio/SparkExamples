@@ -7,6 +7,7 @@
 
  sudo docker rmi spark-base-light
  sudo docker rmi spark-master
+ sudo docker rmi spark-slave
 
  sudo docker build -t spark-base-light ./SparkNode/
  sudo docker build -t spark-master ./SparkMaster/
@@ -18,7 +19,7 @@
 
  sudo docker run -it spark-master /bin/bash
 
- sudo dockeinspect --format '{{ .NetworkSettings.IPAddress }}' 4d8c90cbbf7a
+ sudo docke inspect --format '{{ .NetworkSettings.IPAddress }}' 4d8c90cbbf7a
  
  sudo docker cp 4d8c90cbbf7a:/ .
 
